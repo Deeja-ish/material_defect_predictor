@@ -1,0 +1,224 @@
+.dashboard-card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.dashboard-card:hover{
+    transform: translateY(-4);
+}
+
+/* title{
+    color:  #ffffff;
+    margin: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.chart-box{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+} */
+/* App.jsx styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8fafc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard {
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+
+}
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1{
+    font-size: 2.5rem;
+    color: #0f172a;
+}
+
+.dashboard-header p{
+    color: #64748b;
+    margin-top: 10px;
+}
+
+.grid-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+@media (max-width: 900px) {
+    .grid-two{
+        grid-template-columns: 1fr;
+    }
+}
+
+.prediction-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.prediction-form input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #0f172a;
+    font-size: 15px;
+
+}
+
+.prediction-form button{
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+}
+
+.result-card{
+ background:#eff6ff;
+ padding:15px;
+ border-radius:12px;
+ margin-top:20px;
+}
+
+/* the mertic card design */
+.metrics-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.metric-card{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    transition: .3s;
+}
+
+.metric-card:hover{
+    transform: translateY(-5);
+}
+
+.metric-card h3{
+    color: #64748b;;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.metric-card p{
+    color: #0f172a;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .metrics-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .metrics-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* table design */
+.card-title{
+    margin-bottom:20px;
+    color:#0f172a;
+    font-size:1.4rem;
+    font-weight:600;
+}
+
+.table-wrapper{
+    overflow-x:auto;
+}
+
+.model-table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.model-table thead{
+    background:#2563eb;
+    color:white;
+}
+
+.model-table th{
+    padding:14px;
+    text-align:left;
+    font-weight:600;
+}
+
+.model-table td{
+    padding:14px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.model-table tbody tr{
+    transition:0.2s ease;
+}
+
+.model-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+.model-table tbody tr:nth-child(even){
+    background:#f9fafb;
+}
+
+.intercept-row{
+    background:#eff6ff !important;
+    font-weight:bold;
+}
+
+.prediction-panel{
+
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.panel-header{
+    margin-bottom:25px;
+}
+
+.panel-header h2{
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+.panel-header p{
+    color:#64748b;
+    font-size:14px;
+}
