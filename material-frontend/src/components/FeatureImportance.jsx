@@ -23,14 +23,14 @@ function FeatureImportance () {
             {
                 label : "Feature Importance",
                 data : values,
-                backgroundColor : values.map(v => v > 0 ? "rgba(75,192,192,0.6)" : "rgba(255,99,132,0.6)")
+                backgroundColor : values.map(v => v > 0 ? "rgba(244, 63, 94, 0.8)" : "rgba(59, 130, 246, 0.8)")
             }
         ]
     }
 
     return(
         <div className="dashboard-card">
-            <h1 className="title">Feature Importance</h1>
+            <h2 className="card-title">Feature Importance</h2>
             <div className="chart-box">
                 <Bar data={chartData}/>
             </div>

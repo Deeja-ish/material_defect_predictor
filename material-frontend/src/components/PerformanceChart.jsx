@@ -22,15 +22,15 @@ function PerformanceChart () {
     const dataChart = {
         labels, 
         datasets : [
-           { label: 'Precision', data: precision, backgroundColor: "rgba(75,192,192,0.6)" },
-           { label: 'Recall', data: recall, backgroundColor: "rgba(153,102,255,0.6)" },
-           { label: 'F1-Score', data: f1score, backgroundColor: "rgba(255,159,64,0.6)" }
+           { label: 'Precision', data: precision, backgroundColor: "rgba(59, 130, 246, 0.8)" },
+           { label: 'Recall', data: recall, backgroundColor: "rgba(139, 92, 246, 0.8)" },
+           { label: 'F1-Score', data: f1score, backgroundColor: "rgba(244, 63, 94, 0.8)" }
         ]
     }
 
     return(
         <div className="dashboard-card">
-            <h1 className="header">Performance Chart</h1>
+            <h2 className="card-title">Performance Chart</h2>
             <div className="chart-box">
                 <Bar data = {dataChart} />
             </div>

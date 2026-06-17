@@ -26,12 +26,12 @@ function ConfusionMatrix () {
             {
                 label : 'Predicted No Defect',
                 data: non_defects,
-                backgroundColor: "rgba(75,192,192,0.6)"
+                backgroundColor: "rgba(16, 185, 129, 0.8)"
             },
             {
                 label : 'Predicted Defect',
                 data: defects,
-                backgroundColor: "rgba(255,99,132,0.6)"
+                backgroundColor: "rgba(244, 63, 94, 0.8)"
             }
         ]
 
@@ -39,7 +39,7 @@ function ConfusionMatrix () {
 
     return(
         <div className="dashboard-card">
-            <h1 className="title">Confusion Matrix</h1>
+            <h2 className="card-title">Confusion Matrix</h2>
             <div className="chart-box">
                 <Bar data={dataChart}/>
             </div>
